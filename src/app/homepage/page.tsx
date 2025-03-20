@@ -18,10 +18,10 @@ export default function HomeTwo() {
   return (
     <>
       <div className="overflow-x-hidden">
-        <header id="header">
+        {/* <header id="header">
           <TopNavTwo />
           <MenuTwo />
-        </header>
+        </header> */}
         <main className="content">
           <SliderTwo />
           <PartnerOne classname="bg-dark-blue" />
@@ -38,9 +38,9 @@ export default function HomeTwo() {
           <div className="pb-[100px]"></div>
           <CtaOne />
         </main>
-        <footer id="footer">
+        {/* <footer id="footer">
           <Footer />
-        </footer>
+        </footer> */}
       </div>
     </>
   );

@@ -31,7 +31,7 @@ const AboutTwo = () => {
             <div className="heading3">Bienvenue chez Hamilcar</div>
             <div className="nav-infor mt-8">
               <div className="list-nav flex items-center gap-10 border-b border-line w-fit">
-                {["Histoire", "Mission", "Vision"].map((item, index) => (
+                {["Histoire", "Philosophie", "Mission"].map((item, index) => (
                   <div
                     className={`text-button-sm has-line-before line-2px line-blue cursor-pointer capitalize ${
                       tabActive === item ? "active" : ""
@@ -49,13 +49,8 @@ const AboutTwo = () => {
                 }`}
               >
                 <div className="title text-secondary mt-4">
-                  Hamilcar est né dune vision passionnée pour linnovation et
-                  la transformation numérique. Inspiré par le célèbre général
-                  carthaginois Hamilcar Barca, connu pour sa stratégie et son
-                  leadership, notre entreprise a été créée pour guider les
-                  organisations à travers les défis du monde numérique moderne.
-                  Cette vision stratégique et avant-gardiste est au cœur de tout
-                  ce que nous faisons.
+                Hamilcar est né d'une vision passionnée pour l'innovation et la transformation numérique. Inspiré par le célèbre général carthaginois Hamilcar Barca, connu pour sa stratégie et son leadership, notre entreprise a été créée pour guider les organisations à travers les défis du monde numérique moderne. Cette vision stratégique et avant-gardiste est au cœur de tout ce que nous faisons.
+
                 </div>
                 <div className="more-infor mt-6">
                   <div className="infor flex items-center gap-3">
@@ -64,7 +59,7 @@ const AboutTwo = () => {
                       className="text-blue text-xl"
                     />
                     <div className="text-button">
-                      Identification of monthly income
+                      Notre entreprise a vu le jour en 1990
                     </div>
                   </div>
                   <div className="infor flex items-center gap-3 mt-3">
@@ -73,7 +68,7 @@ const AboutTwo = () => {
                       className="text-blue text-xl"
                     />
                     <div className="text-button">
-                      Creation of savings and investment plan
+                      Nous étions impliqué dans 10 projets de grande envergure
                     </div>
                   </div>
                   <div className="infor flex items-center gap-3 mt-3">
@@ -82,7 +77,46 @@ const AboutTwo = () => {
                       className="text-blue text-xl"
                     />
                     <div className="text-button">
-                      Management and calculation of monthly expenses
+                      30 employés et plus de 100 clients satisfaits
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className={`description item-filter ${
+                  tabActive === "Philosophie" ? "show" : "hide"
+                }`}
+              >
+                <div className="title body3 text-secondary mt-4">
+                Chez Hamilcar, nous croyons que le travail doit être une source de plaisir et d'accomplissement. Nous cultivons un environnement où nos employés partagent des valeurs humaines et se réalisent chaque jour.
+
+                </div>
+                <div className="more-infor mt-6">
+                  <div className="infor flex items-center gap-3">
+                    <Icon.CheckCircle
+                      weight="fill"
+                      className="text-blue text-xl"
+                    />
+                    <div className="text-button">
+                      Le travail est une source de plaisir
+                    </div>
+                  </div>
+                  <div className="infor flex items-center gap-3 mt-3">
+                    <Icon.CheckCircle
+                      weight="fill"
+                      className="text-blue text-xl"
+                    />
+                    <div className="text-button">
+                      Satisfaire le client est une priorité
+                    </div>
+                  </div>
+                  <div className="infor flex items-center gap-3 mt-3">
+                    <Icon.CheckCircle
+                      weight="fill"
+                      className="text-blue text-xl"
+                    />
+                    <div className="text-button">
+                      Nos employés partagent des valeurs humaines
                     </div>
                   </div>
                 </div>
@@ -93,9 +127,8 @@ const AboutTwo = () => {
                 }`}
               >
                 <div className="title body3 text-secondary mt-4">
-                  Nous visons à propulser le succès de nos clients grâce à des
-                  services-conseils de haute qualité, portés par le
-                  professionnalisme et lengagement de notre équipe.
+                Nous visons à propulser le succès de nos clients grâce à des services-conseils de haute qualité, portés par le professionnalisme et l'engagement de notre équipe. Les valeurs qui nous animent :
+
                 </div>
                 <div className="more-infor mt-6">
                   <div className="infor flex items-center gap-3">
@@ -104,7 +137,7 @@ const AboutTwo = () => {
                       className="text-blue text-xl"
                     />
                     <div className="text-button">
-                      Management and calculation of monthly expenses
+                      Créativité et innovation
                     </div>
                   </div>
                   <div className="infor flex items-center gap-3 mt-3">
@@ -113,7 +146,7 @@ const AboutTwo = () => {
                       className="text-blue text-xl"
                     />
                     <div className="text-button">
-                      Identification of monthly income
+                      Simplicité et efficacité
                     </div>
                   </div>
                   <div className="infor flex items-center gap-3 mt-3">
@@ -122,48 +155,7 @@ const AboutTwo = () => {
                       className="text-blue text-xl"
                     />
                     <div className="text-button">
-                      Creation of savings and investment plan
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                className={`description item-filter ${
-                  tabActive === "Vision" ? "show" : "hide"
-                }`}
-              >
-                <div className="title body3 text-secondary mt-4">
-                  Chez Hamilcar, nous croyons que le travail doit être une
-                  source de plaisir et daccomplissement. Nous cultivons un
-                  environnement où nos employés partagent des valeurs humaines
-                  et se réalisent chaque jour.
-                </div>
-                <div className="more-infor mt-6">
-                  <div className="infor flex items-center gap-3">
-                    <Icon.CheckCircle
-                      weight="fill"
-                      className="text-blue text-xl"
-                    />
-                    <div className="text-button">
-                      Creation of savings and investment plan
-                    </div>
-                  </div>
-                  <div className="infor flex items-center gap-3 mt-3">
-                    <Icon.CheckCircle
-                      weight="fill"
-                      className="text-blue text-xl"
-                    />
-                    <div className="text-button">
-                      Management and calculation of monthly expenses
-                    </div>
-                  </div>
-                  <div className="infor flex items-center gap-3 mt-3">
-                    <Icon.CheckCircle
-                      weight="fill"
-                      className="text-blue text-xl"
-                    />
-                    <div className="text-button">
-                      Identification of monthly income
+                      Nouveauté et dynamisme
                     </div>
                   </div>
                 </div>
@@ -174,7 +166,7 @@ const AboutTwo = () => {
                 className="button-main text-white bg-blue hover-button-black text-button rounded-full"
                 href="contact-two.html"
               >
-                Get started
+                Commencer
               </a>
               <a
                 className="button-main text-on-surface hover:bg-black hover:text-white hover:border-transparent bg-white text-button rounded-full border-2 border-blue flex items-center gap-2"

@@ -11,8 +11,8 @@ const ProjectTwo = () => {
     return (
         <div className="our-project-block lg:mt-[100px] sm:mt-16 mt-10">
             <div className="container">
-                <div className="heading3 text-center">Our Projects</div>
-                <div className="body2 text-secondary mt-3 text-center">Find your favourite jobs and get the benefits of yourself</div>
+                <div className="heading3 text-center">Réalisations majeures</div>
+                <div className="body2 text-secondary mt-3 text-center">En voici un échantillon de nos projets majeurs, et bien plus encore... <br />Nous souhaitons, vous voir le bienvenue chez Hamilcar.</div>
             </div>
             <div className="list-project md:mt-10 mt-7">
                 <Swiper

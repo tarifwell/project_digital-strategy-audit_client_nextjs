@@ -6,7 +6,7 @@ const OurTeam = () => {
         <div className="our-team-block pt-[100px] sm:pt-16 pt-10 bg-white">
             <div className="container">
                 <div className="heading-block">
-                    <div className="heading3">Our Professional Team</div>
+                    <div className="heading3">Notre équipe professionnelle</div>
                 </div>
                 <div className="list-member md:mt-10 mt-6 grid xl:grid-cols-4 sm:grid-cols-2 gap-8">
                     <div className="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -14,8 +14,8 @@ const OurTeam = () => {
                             <div className="list-social bg-white"><Link href="http://facebook.com" target="_blank"> <i className="icon-facebook text-sm"></i></Link><Link href="http://linkedin.com" target="_blank"> <i className="icon-in text-sm"></i></Link><Link href="http://twitter.com" target="_blank"> <i className="icon-twitter fs-12"></i></Link><Link href="http://instagram.com" target="_blank"> <i className="icon-insta fs-12"></i></Link></div>
                         </div>
                         <div className="infor text-center pt-4">
-                            <div className="name heading6">Maria Takado</div>
-                            <div className="caption1 text-secondary">Senior UI-UX Designer </div>
+                            <div className="name heading6">Salah Ben Salah</div>
+                            <div className="caption1 text-secondary">CEO - Directeur Géneral</div>
                         </div>
                     </div>
                     <div className="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -23,8 +23,8 @@ const OurTeam = () => {
                             <div className="list-social bg-white"><Link href="http://facebook.com" target="_blank"> <i className="icon-facebook text-sm"></i></Link><Link href="http://linkedin.com" target="_blank"> <i className="icon-in text-sm"></i></Link><Link href="http://twitter.com" target="_blank"> <i className="icon-twitter fs-12"></i></Link><Link href="http://instagram.com" target="_blank"> <i className="icon-insta fs-12"></i></Link></div>
                         </div>
                         <div className="infor text-center pt-4">
-                            <div className="name heading6">Kim Naika </div>
-                            <div className="caption1 text-secondary">CEO Technology Avitex</div>
+                            <div className="name heading6">Salah Ben Salah</div>
+                            <div className="caption1 text-secondary">CTO - Directeur Technique</div>
                         </div>
                     </div>
                     <div className="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -32,8 +32,8 @@ const OurTeam = () => {
                             <div className="list-social bg-white"><Link href="http://facebook.com" target="_blank"> <i className="icon-facebook text-sm"></i></Link><Link href="http://linkedin.com" target="_blank"> <i className="icon-in text-sm"></i></Link><Link href="http://twitter.com" target="_blank"> <i className="icon-twitter fs-12"></i></Link><Link href="http://instagram.com" target="_blank"> <i className="icon-insta fs-12"></i></Link></div>
                         </div>
                         <div className="infor text-center pt-4">
-                            <div className="name heading6">John Doe</div>
-                            <div className="caption1 text-secondary">Creative Director at Avitex </div>
+                            <div className="name heading6">Salah Ben Salah</div>
+                            <div className="caption1 text-secondary">COO - Directeur des opérations</div>
                         </div>
                     </div>
                     <div className="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6">
@@ -41,8 +41,8 @@ const OurTeam = () => {
                             <div className="list-social bg-white"><Link href="http://facebook.com" target="_blank"> <i className="icon-facebook text-sm"></i></Link><Link href="http://linkedin.com" target="_blank"> <i className="icon-in text-sm"></i></Link><Link href="http://twitter.com" target="_blank"> <i className="icon-twitter fs-12"></i></Link><Link href="http://instagram.com" target="_blank"> <i className="icon-insta fs-12"></i></Link></div>
                         </div>
                         <div className="infor text-center pt-4">
-                            <div className="name heading6">Dave Nguyen</div>
-                            <div className="caption1 text-secondary">CEO Technology Avitex</div>
+                            <div className="name heading6">Salah Ben Salah</div>
+                            <div className="caption1 text-secondary">CFO - Directeur Financier</div>
                         </div>
                     </div>
                     <div className="col-12 col-xl-3 col-lg-3 col-md-6 col-sm-6 hidden">

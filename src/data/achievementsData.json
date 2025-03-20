@@ -1,29 +1,29 @@
 [
     {
         "id": 1,
-        "category": "fintech",        
-        "subTitle": "made financial planning",
-        "title": "Retirement Planning Strategies",
-        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
-        "shortDesc": "",        
+        "category": "Géneral",        
+        "subTitle": "Charités locales",
+        "title": "Activités au Québec",
+        "desc": "Nous avons effectué des activités charitatives dans divers régions du Québec auprès de familles en difficultés.",
+        "shortDesc": "Nous avons effectué des activités charitatives dans divers régions du Québec auprès de familles en difficultés.",        
         "img": "/images/component/930x593.png"
     },
     {
         "id": 2,
-        "category": "fintech",        
-        "subTitle": "retirement planning",
-        "title": "Taxes Optimization Solutions",
-        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
-        "shortDesc": "",        
+        "category": "Géneral",        
+        "subTitle": "Collaborations régionales",
+        "title": "Collaborations au Canada",
+        "desc": "Nous avons collaboré avec des associations locales à l'échelle du Canada pour offrir des services de soutien au sein des écoles primaires et secondaires.",
+        "shortDesc": "Nous avons collaboré avec des associations locales à l'échelle du Canada pour offrir des services de soutien au sein des écoles primaires et secondaires.",        
         "img": "/images/component/930x593.png"
     },
     {
         "id": 3,
-        "category": "fintech",        
-        "subTitle": "account management tools",
-        "title": "Business Succession Planning",
-        "desc": "Experience the excitement and potential of the cryptocurrency market with our expert trading services.",
-        "shortDesc": "",        
+        "category": "Géneral",        
+        "subTitle": "Activités internationales",
+        "title": "Actions Internationales",
+        "desc": "Nous avons intervenus dans le cadre de programmes menés par des ONG, et ce,  auprès des entreprises internationales pour aider leurs dirigeants de transition en matière de succession et de gouvernance.",
+        "shortDesc": "Nous avons intervenus dans le cadre de programmes menés par des ONG, et ce,  auprès des entreprises internationales pour aider leurs dirigeants de transition en matière de succession et de gouvernance.",        
         "img": "/images/component/930x593.png"
     },
     {

@@ -1,8 +1,21 @@
 export interface ServiceType {
-    id?: string; // Ajout de l'ID unique
-    icon: string,
-    category: string,
-    title: string,
-    desc: string,
-    shortDesc: string,
+    id?: number; // Ajout de l'ID unique
+    slug: string;
+    icon: string;
+    image: string;
+    category: string;
+    title: string;
+    desc: string;
+    shortDesc: string;
+    serviceItems: {
+            id: number;
+            itemTitle: string;
+            itemDesc: string
+        }[];
+    serviceQuestions: {
+                id: number;
+                qsSubject: string;
+                qsResponse: string;
+        }[]
 }
+

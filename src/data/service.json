@@ -166,5 +166,12 @@
         "title": "Wallet Development",
         "desc": "Expand your knowledge and skills in cryptocurrency trading through our educational resources.",
         "shortDesc": "We develop secure and user-friendly cryptocurrency wallets that enable seamless storage and management of digital assets"
+    },
+    {
+        "icon": "icon-education",
+        "category": "payment solution",
+        "title": "Education and Resources",
+        "desc": "Expand your knowledge and skills in cryptocurrency trading through our educational resources.",
+        "shortDesc": "We provide timely reports, market updates, and data-driven insights to help you make informed trading decisions."
     }
 ]

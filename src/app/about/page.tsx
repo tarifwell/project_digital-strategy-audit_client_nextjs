@@ -15,16 +15,12 @@ export default function AboutStyleOne() {
   return (
     <>
       <div className="overflow-x-hidden">
-        <header id="header">
-          {/* <TopNavOne /> */}
-          {/* <MenuOne /> */}
-        </header>
         <main className="content">
           <BreadcrumbItem
             link="About Us"
             img="/images/banner/about1.png"
-            title="About Us"
-            desc="We perform a full analysis of the client’s website and collect information about all the competitors to formulate a proper strategy."
+            title="A propos de Nous"
+            desc="Depuis la création, nous avons poursuivi notre mission d'aider les entreprises à mettre en œuvre des solutions innovantes pour leur transformation numérique. Nous cherchons à propulser le succès de nos clients grâce à des services-conseils de haute qualité, portés par le professionnalisme et l'engagement de notre équipe."
           />
           <AboutTwo />
           <CounterFive classname="lg:pb-[100px] sm:pb-16 pb-10" />
@@ -34,7 +30,6 @@ export default function AboutStyleOne() {
           {/* <PartnerAbout /> */}
           {/* <CtaOne /> */}
         </main>
-        <footer id="footer">{/* <Footer /> */}</footer>
       </div>
     </>
   );

@@ -30,12 +30,7 @@ const Expertise: React.FC<Props> = ({ data }) => {
                     </div> */}
           <div className="w-full xl:pl-[72px] list-service grid lg:grid-cols-3 sm:grid-cols-2 gap-8 mt-8 max-xl:mt-8">
             {data.map((item, index) => (
-              <ExpertiseItem
-                data={item}
-                style="style-two"
-                number={index}
-                key={index}
-              />
+              <ExpertiseItem data={item} style="style-two" number={index} key={index} />
             ))}
           </div>
         </div>

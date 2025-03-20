@@ -36,6 +36,7 @@ const ExpertiseItem: React.FC<Props> = ({ data, style, number }) => {
                         </div>
                         <div className="infor">
                             <div className="heading7 hover:text-blue duration-300">{data.title}</div>
+                            <br />
                             <div className="text-secondary mt-2">{data.shortDesc}</div>
                             <div className="read-more flex items-center gap-1 mt-2">
                                 <Link
