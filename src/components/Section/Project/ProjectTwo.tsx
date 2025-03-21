@@ -5,6 +5,7 @@ import Link from "next/link"
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
+import achievementsData from '@/data/achievementsData.json'
 import 'swiper/css/bundle';
 
 const ProjectTwo = () => {
@@ -41,76 +42,22 @@ const ProjectTwo = () => {
                         }
                     }}
                 >
-                    <SwiperSlide>
+                    {achievementsData.length > 0 && achievementsData.map((item, index) => (
+                        <SwiperSlide key={index}>
                         <div className="item">
                             <div className="bg-img overflow-hidden">
-                                <Image width={5000} height={5000} className="w-full h-full" src="/images/component/472x354.png" alt="" />
+                                <Image width={5000} height={5000} className="w-full h-full" src={item.img} alt="" />
                             </div>
-                            <Link className="text" href="/case-studies/case-studies-one">
-                                <div className="heading5 text-white">Financial assessment</div>
-                                <div className="body3 text-white mt-1">Budget Planning</div>
+                            <Link className="text" href={`/achievements/${item.slug}`}>
+                                <div className="heading5 text-white">{item.title}</div>
+                                <div className="body3 text-white mt-1">{item.client}</div>
                             </Link>
-                            <Link className="arrow w-[52px] h-[52px] flex items-center justify-center bg-white rounded-full hover:text-white" href="/case-studies/case-studies-one">
+                            <Link className="arrow w-[52px] h-[52px] flex items-center justify-center bg-white rounded-full hover:text-white" href={`/achievements/${item.slug}`}>
                                 <Icon.ArrowRight className="text-3xl" />
                             </Link>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="item">
-                            <div className="bg-img overflow-hidden">
-                                <Image width={5000} height={5000} className="w-full h-full" src="/images/component/472x354.png" alt="" />
-                            </div>
-                            <Link className="text" href="/case-studies/case-studies-one">
-                                <div className="heading5 text-white">Budget Planning</div>
-                                <div className="body3 text-white mt-1">Financial Advice</div>
-                            </Link>
-                            <Link className="arrow w-[52px] h-[52px] flex items-center justify-center bg-white rounded-full hover:text-white" href="/case-studies/case-studies-one">
-                                <Icon.ArrowRight className="text-3xl" />
-                            </Link>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="item">
-                            <div className="bg-img overflow-hidden">
-                                <Image width={5000} height={5000} className="w-full h-full" src="/images/component/472x354.png" alt="" />
-                            </div>
-                            <Link className="text" href="/case-studies/case-studies-one">
-                                <div className="heading5 text-white">Insurance advice</div>
-                                <div className="body3 text-white mt-1">Financial Planning</div>
-                            </Link>
-                            <Link className="arrow w-[52px] h-[52px] flex items-center justify-center bg-white rounded-full hover:text-white" href="/case-studies/case-studies-one">
-                                <Icon.ArrowRight className="text-3xl" />
-                            </Link>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="item">
-                            <div className="bg-img overflow-hidden">
-                                <Image width={5000} height={5000} className="w-full h-full" src="/images/component/472x354.png" alt="" />
-                            </div>
-                            <Link className="text" href="/case-studies/case-studies-one">
-                                <div className="heading5 text-white">Savings advice</div>
-                                <div className="body3 text-white mt-1">Business Planning</div>
-                            </Link>
-                            <Link className="arrow w-[52px] h-[52px] flex items-center justify-center bg-white rounded-full hover:text-white" href="/case-studies/case-studies-one">
-                                <Icon.ArrowRight className="text-3xl" />
-                            </Link>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="item">
-                            <div className="bg-img overflow-hidden">
-                                <Image width={5000} height={5000} className="w-full h-full" src="/images/component/472x354.png" alt="" />
-                            </div>
-                            <Link className="text" href="/case-studies/case-studies-one">
-                                <div className="heading5 text-white">Portfolio Management</div>
-                                <div className="body3 text-white mt-1">Manage Account Infor</div>
-                            </Link>
-                            <Link className="arrow w-[52px] h-[52px] flex items-center justify-center bg-white rounded-full hover:text-white" href="/case-studies/case-studies-one">
-                                <Icon.ArrowRight className="text-3xl" />
-                            </Link>
-                        </div>
-                    </SwiperSlide>
+                    ))}
                 </Swiper>
             </div>
         </div>

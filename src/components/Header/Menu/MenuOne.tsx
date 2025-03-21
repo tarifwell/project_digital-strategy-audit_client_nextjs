@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import * as Icon from "@phosphor-icons/react/dist/ssr";
+import servicesData from "@/data/servicesData.json";
+import socialData from "@/data/socialData.json";
 
 const MenuOne = () => {
   const pathname = usePathname();
@@ -62,7 +64,7 @@ const MenuOne = () => {
                   className="nav-link text-title flex items-center gap-1"
                   href="/"
                 >
-                  <span>Home</span>
+                  <span>Accueil</span>
                 </Link>
               </li>
               <li
@@ -74,10 +76,12 @@ const MenuOne = () => {
                   className="nav-link text-title flex items-center gap-1"
                   href="/about"
                 >
-                  <span>About</span>
+                  <span>A propos</span>
                 </Link>
               </li>
-              <li
+              
+              
+              {/* <li
                 className={`nav-item h-full flex items-center justify-center ${
                   pathname.includes("/service") ? "active" : ""
                 }`}
@@ -89,7 +93,76 @@ const MenuOne = () => {
                   <span>Services</span>
                   <span></span>
                 </Link>
+              </li> */}
+
+              <li
+                className={`nav-item h-full flex items-center justify-center ${
+                  pathname.includes("/services/") ? "active" : ""
+                }`}
+              >
+                <Link
+                  className="nav-link text-title flex items-center gap-1"
+                  href="/services"
+                >
+                  <span>Services</span>
+                  <span>
+                    <Icon.CaretDown className="text-sm" />
+                  </span>
+                </Link>
+                <ul className="sub-nav">
+                  
+                {servicesData.map((service, index) => (
+                        <li
+                        key={`menu-services-detail-${service.id}`}
+                        className={`sub-nav-item ${
+                          pathname === "/services/"+service.slug ? "active" : ""
+                        }`}
+                      >
+                        <Link
+                          className="sub-nav-link font-medium"
+                          href={`/services/${service.slug}`}
+                        >
+                          {service.title}
+                        </Link>
+                      </li>
+                      ))}
+                </ul>
               </li>
+
+              <li
+                className={`nav-item h-full flex items-center justify-center ${
+                  pathname.includes("/social/") ? "active" : ""
+                }`}
+              >
+                <Link
+                  className="nav-link text-title flex items-center gap-1"
+                  href="/social"
+                >
+                  <span>Social</span>
+                  <span>
+                    <Icon.CaretDown className="text-sm" />
+                  </span>
+                </Link>
+                <ul className="sub-nav">
+                  
+                {socialData.slice(0, 3).map((social, index) => (
+                        <li
+                        key={`menu-social-detail-${social.id}`}
+                        className={`sub-nav-item ${
+                          pathname === "/social/"+social.slug ? "active" : ""
+                        }`}
+                      >
+                        <Link
+                          className="sub-nav-link font-medium"
+                          href={`/social/${social.slug}`}
+                        >
+                          {social.title}
+                        </Link>
+                      </li>
+                      ))}
+                </ul>
+              </li>
+
               <li
                 className={`nav-item h-full flex items-center justify-center ${
                   pathname.includes("/pages/") ? "active" : ""
@@ -99,7 +172,7 @@ const MenuOne = () => {
                   className="nav-link text-title flex items-center gap-1"
                   href="#!"
                 >
-                  <span>Pages</span>
+                  <span>Boite à Outils</span>
                   <span>
                     <Icon.CaretDown className="text-sm" />
                   </span>
@@ -110,7 +183,6 @@ const MenuOne = () => {
                       pathname === "/pages/faqs" ? "active" : ""
                     }`}
                   >
-                    {" "}
                     <Link
                       className="sub-nav-link font-medium"
                       href="/pages/faqs"
@@ -120,28 +192,52 @@ const MenuOne = () => {
                   </li>
                   <li
                     className={`sub-nav-item ${
-                      pathname === "/pages/pricing" ? "active" : ""
+                      pathname === "/pages/evaluation-maturite" ? "active" : ""
                     }`}
                   >
-                    {" "}
                     <Link
                       className="sub-nav-link font-medium"
-                      href="/pages/pricing"
+                      href="/pages/evaluation-maturite"
                     >
-                      Pricing
+                      Evaluation Maturité Numérique
                     </Link>
                   </li>
                   <li
                     className={`sub-nav-item ${
-                      pathname === "/pages/partners" ? "active" : ""
+                      pathname === "/pages/integration-ia" ? "active" : ""
                     }`}
                   >
-                    {" "}
                     <Link
                       className="sub-nav-link font-medium"
-                      href="/pages/partners"
+                      href="/pages/integration-ia"
                     >
-                      Partners
+                      Evaluation Intégration IA
+                    </Link>
+                  </li>
+
+                  <li
+                    className={`sub-nav-item ${
+                      pathname === "/pages/incidence-algorithmique" ? "active" : ""
+                    }`}
+                  >
+                    <Link
+                      className="sub-nav-link font-medium"
+                      href="/pages/incidence-algorithmique"
+                    >
+                      Evaluation de l'Incidence Algorithmique
+                    </Link>
+                  </li>
+
+                  <li
+                    className={`sub-nav-item ${
+                      pathname === "/pages/etat-sante-cybersecurite" ? "active" : ""
+                    }`}
+                  >
+                    <Link
+                      className="sub-nav-link font-medium"
+                      href="/pages/etat-sante-cybersecurite"
+                    >
+                      Etat de santé en Cybersécurité
                     </Link>
                   </li>
                 </ul>
@@ -166,7 +262,7 @@ const MenuOne = () => {
               <i className="icon-phone-call text-4xl"></i>
             </div>
             <div className="text ml-3">
-              <div className="text caption1">Free Consultancy</div>
+              <div className="text caption1">Conseil Gratuit</div>
               <div className="number text-button">+123 456 7890</div>
             </div>
             <div
@@ -248,7 +344,7 @@ const MenuOne = () => {
                       </Link>
                     </li>
                     <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2">
-                      {" "}
+
                       <Link
                         className="sub-nav-link text-base"
                         href="/pages/pricing"
@@ -257,7 +353,7 @@ const MenuOne = () => {
                       </Link>
                     </li>
                     <li className="sub-nav-item pl-3 pr-3 pt-2 pb-2">
-                      {" "}
+
                       <Link
                         className="sub-nav-link text-base"
                         href="/pages/partners"

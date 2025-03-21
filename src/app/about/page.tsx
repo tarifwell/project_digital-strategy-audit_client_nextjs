@@ -10,6 +10,8 @@ import OurTeam from "@/components/Section/OurTeam/OurTeam";
 // import CtaOne from "@/components/Section/CTA/CtaOne"
 // import Footer from "@/components/Footer/Footer"
 import PartnerSix from "@/components/Section/Partner/PartnerSix";
+import PartnerAbout from "@/components/Section/Partner/PartnerAbout"
+import CtaOne from "@/components/Section/CTA/CtaOne";
 
 export default function AboutStyleOne() {
   return (
@@ -26,9 +28,10 @@ export default function AboutStyleOne() {
           <CounterFive classname="lg:pb-[100px] sm:pb-16 pb-10" />
           <Expertise data={ExpertiseData} />
           <OurTeam />
-          <PartnerSix classname="bg-blue lg:mt-[100px] sm:mt-16 mt-10" />
+          <PartnerAbout />
+          {/* <PartnerSix classname="bg-blue lg:mt-[100px] sm:mt-16 mt-10" /> */}
           {/* <PartnerAbout /> */}
-          {/* <CtaOne /> */}
+          <CtaOne />
         </main>
       </div>
     </>

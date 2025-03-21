@@ -15,7 +15,7 @@ import CaseStudyThree from "@/components/Section/CaseStudy/CaseStudyThree";
 import CaseStudyFour from "@/components/Section/CaseStudy/CaseStudyFour";
 import caseStudyData from '@/data/case-study.json';
 import socialData from '@/data/socialData.json';
-import testimonialData from '@/data/testimonial.json';
+import testimonialData from '@/data/testimonialData.json';
 import TestimonialFive from "@/components/Section/Testimonial/TestimonialFive";
 import FormRequestFive from "@/components/Section/FormRequest/FormRequestFive";
 // import blogData from '@/data/blog.json'

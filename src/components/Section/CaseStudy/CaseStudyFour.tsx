@@ -19,9 +19,9 @@ const CaseStudyFour = ({ data }: Props) => {
 
             <Link
               className="text-button underline hover:text-success duration-300"
-              href="/case-studies/case-studies-one"
+              href="/social"
             >
-              View All
+              Voir tous
             </Link>
           </div>
           <div className="body3 text-secondary lg:mt-5 mt-3">
