@@ -34,7 +34,7 @@ export default function CaseStudyStyleOne() {
           <BreadcrumbItem
             link="Engagement social"
             img="/images/banner/about1.png"
-            title="Case Studies"
+            title="Engagement social"
             desc="Notre implication est à la fois locale et internationale. Chez Hamilcar, nous sommes profondément engagés à avoir un impact positif sur la société."
           />
 

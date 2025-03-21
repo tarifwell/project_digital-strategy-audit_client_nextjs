@@ -195,8 +195,8 @@ export default function ContactStyleOne() {
             // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7212.823144874193!2d-99.1401739338783!3d19.435895215060164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9315ce03079%3A0x7b6d1555d27fc3fa!2sCentral%20De%20Mayoreo!5e0!3m2!1svi!2s!4v1710150086015!5m2!1svi!2s"
             loading="lazy"
           ></iframe>
-          <PartnerSix classname='bg-blue lg:mt-[100px] sm:mt-16 mt-10' />
         </main>
+        
         <footer id="footer">{/* <Footer /> */}</footer>
       </div>
     </>
