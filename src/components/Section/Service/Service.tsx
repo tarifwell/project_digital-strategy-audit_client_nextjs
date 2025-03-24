@@ -1,3 +1,4 @@
+
 import React from 'react'
 import ServiceItem from '../../Service/ServiceItem'
 import { ServiceType } from '@/type/ServiceType'
@@ -8,7 +9,6 @@ interface Props {
 }
 
 const ServiceFive: React.FC<Props> = ({ title, data }) => {
-    
     return (
         <>
             <div className="service-block lg:pt-[100px] sm:pt-16 pt-10">

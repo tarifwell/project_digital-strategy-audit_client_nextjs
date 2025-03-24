@@ -4,29 +4,20 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import BreadcrumbItem from "@/components/Breadcrumb/BreadcrumbItem";
 import ServiceFilter from "@/components/Section/Service/ServiceFilter";
-import serviceData from "@/data/service.json";
+
 import CtaOne from "@/components/Section/CTA/CtaOne";
 import FaqsOne from "@/components/Section/FAQs/FaqsOne";
 import * as Icon from "@phosphor-icons/react/dist/ssr";
 import faqData from "@/data/faqs.json";
-import servicesData from "@/data/servicesData.json";
+import servicesData  from '../../../dataApi/services.json';
 import Image from "next/image";
 // import { useRouter } from "next/navigation";
 
 export default function ServiceStyleOne() {
   const [faq, setFaq] = useState<number | null>(1);
   const [reverse, setReverse] = useState(false);
-  // const router = useRouter();
 
-  // useEffect(() => {
-  //   // Redirect to the first service in the list, or show a 404 if no services exist
-  //   if (servicesData.length > 0) {
-  //       const firstService = servicesData[0]
-  //       const slug = firstService.title.toLowerCase().replace(/ /g, '-')
-  //       router.replace(`/service/${slug}`)
-  //   }
-  // }, [router])
-
+  const columnSize = Math.ceil(servicesData.length / 2)
   const handleFaq = (id: number) => {
     setFaq((prevId) => (prevId === id ? null : id));
   };
@@ -75,7 +66,28 @@ export default function ServiceStyleOne() {
                     </div>
                     <div className="body2 text-secondary mt-4">{`Notre approche est centrée sur la personnalisation et l’adaptabilité. Nous proposons des solutions variées allant de la mise en place de stratégies numériques, à l’intégration de l’intelligence artificielle, à la gestion de la cybersécurité. Nous vous aidons à créer de nouveaux modèles d'affaires, à optimiser vos processus internes et à développer des solutions innovantes pour rester compétitif dans un environnement numérique en constante évolution.`}</div>
                     <div className="list-feature mt-8">
-                      <div className="flex max-lg:flex-col gap-y-3">
+                    <div className="flex max-lg:flex-col gap-y-3">
+  {/* Première colonne */}
+  <div className="w-full lg:w-1/2 flex flex-col gap-y-3">
+    {servicesData.slice(0, columnSize).map((service, index) => (
+      <div key={index} className="flex items-center gap-4">
+        <Icon.CheckCircle weight="fill" className="text-xl text-blue flex-shrink-0" />
+        <div className="text-button font-bold">{service.title}</div>
+      </div>
+    ))}
+  </div>
+
+  {/* Deuxième colonne */}
+  <div className="w-full lg:w-1/2 flex flex-col gap-y-3">
+    {servicesData.slice(columnSize).map((service, index) => (
+      <div key={index} className="flex items-center gap-4">
+        <Icon.CheckCircle weight="fill" className="text-xl text-blue flex-shrink-0" />
+        <div className="text-button font-bold">{service.title}</div>
+      </div>
+    ))}
+  </div>
+</div>
+                      {/* <div className="flex max-lg:flex-col gap-y-3">
                         <div className="w-full lg:w-1/2 gap-y-3 flex flex-col">
                           <div className="item flex items-center gap-4">
                             <Icon.CheckCircle
@@ -141,7 +153,7 @@ export default function ServiceStyleOne() {
                             <div className="text-button">Cybersécurité</div>
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
 
                     {/* <div className="list-question lg:mt-[60px] mt-8">
@@ -176,15 +188,13 @@ export default function ServiceStyleOne() {
                       avons la solution pour vous, et vous aurez toujours des
                       services de qualité.
                     </div>
-                    <div className="list-nav mt-4">
+                    <div className="list-nav mt-4 " >
                       {servicesData.map((service, index) => (
-                        <Link
-                          key={`service-${index}`}
-                          className="nav-item rounded-lg flex-between p-12"
-                          href={`/services/${service.slug}`} 
-                          /*href={"/services/[slug]"}
-                          as={"/services/transformation-numérique"}*/
-                        >
+                       <Link 
+                       key={index}
+                       className={`nav-item rounded-lg flex-between m-5 p-0 ${index > 0 ? 'mt-12' : ''} `}
+                       href={`/services/${service.title.toLowerCase().replace(/ /g, '-')}`}
+                   >
                           <div className="text-button text-secondary">
                             {service.title}
                           </div>

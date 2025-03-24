@@ -232,7 +232,7 @@
         "paragraph2": {
             "pTitle": "",
             "pDesc": "",
-            "pkeyPoints": [],
+            "pKeyPoints": [],
             "pImg": "/images/component/930x593.png"
         },
         "testimonials": [
@@ -283,13 +283,13 @@
         "paragraph1": {
             "pTitle": "",
             "pDesc": "",
-            "pkeyPoints": [],
+            "pKeyPoints": [],
             "pImg": "/images/component/930x593.png"
         }, 
         "paragraph2": {
             "pTitle": "",
             "pDesc": "",
-            "pkeyPoints": [],
+            "pKeyPoints": [],
             "pImg": "/images/component/930x593.png"
         },
         "testimonials": [

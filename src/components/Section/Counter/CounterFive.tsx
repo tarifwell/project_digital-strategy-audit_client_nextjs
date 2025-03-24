@@ -46,7 +46,7 @@ const CounterFive: React.FC<Props> = ({ classname }) => {
                                 <div className="counter heading3">246</div>
                                 <span className="heading3">k €</span>
                             </div>
-                            <div className="body1 text-secondary text-center">Chiffre d'affaire réalisé</div>
+                            <div className="body1 text-secondary text-center">Chiffre d ffaire réalisé</div>
                         </div>
                     </div>
                 </div>

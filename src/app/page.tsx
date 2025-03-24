@@ -8,8 +8,7 @@ import SliderOne from "@/components/Slider/SliderOne";
 // import PaymentGatewayOneSecond from "@/components/Section/PaymentGateway/PaymentGatewayOneSecond";
 // import FaqsOne from "@/components/Section/FAQs/FaqsOne";
 import CounterFive from "@/components/Section/Counter/CounterFive";
-import servicesData from '@/data/servicesData.json';
-import ServiceFive from "@/components/Section/Service/ServiceFive";
+
 import ProjectTwo from "@/components/Section/Project/ProjectTwo";
 import CaseStudyThree from "@/components/Section/CaseStudy/CaseStudyThree";
 import CaseStudyFour from "@/components/Section/CaseStudy/CaseStudyFour";
@@ -22,7 +21,8 @@ import FormRequestFive from "@/components/Section/FormRequest/FormRequestFive";
 // import BlogOne from "@/components/Section/Blog/BlogOne";
 import PartnerSix from "@/components/Section/Partner/PartnerSix";
 // import Footer from "@/components/Footer/Footer";
-
+import Service from "@/components/Section/Service/Service";
+import serviceData from '../../dataApi/services.json';
 export default function Home() {
   return (
     <>
@@ -40,9 +40,10 @@ export default function Home() {
           <FaqsOne /> */}
           <CounterFive classname="bg-surface rounded-2xl py-8 px-10 lg:mt-[100px] sm:mt-16 mt-10" />
           
-          <ServiceFive title="Des services qui optimisent votre potentiel numérique" data={servicesData} />
-          <CaseStudyFour data={socialData} />
+          <Service title="Des services qui optimisent votre potentiel numérique" data={serviceData} />
           <ProjectTwo />
+          <CaseStudyFour data={socialData} />
+          
           {/* <CaseStudyThree data={caseStudyData} /> */}
           <TestimonialFive data={testimonialData} />
           {/* <FormRequestFive /> */}

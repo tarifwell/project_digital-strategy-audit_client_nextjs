@@ -16,7 +16,6 @@ const ExpertisePopup: React.FC<Props> = ({ data, onClose }) => {
             <div className="bg-white rounded-lg p-8 w-full max-w-md">
                 <div className="flex justify-between items-center mb-4">
                     <h2 className="text-2xl font-semibold">{data.title}</h2>
-                    <br />
                     <button onClick={onClose} className="text-gray-600 hover:text-gray-800">
                         <Icon.X size={24} />
                     </button>
