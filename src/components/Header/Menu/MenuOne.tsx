@@ -444,7 +444,7 @@ const MenuOne = () => {
               >
                 <Link
                   className="nav-link text-title flex items-center gap-1"
-                  href="#!"
+                  href="/toolbox"
                 >
                   <span>Boite à Outils</span>
                   <span>
